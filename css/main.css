@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: Pufony;
+  src: url(../files/Pufony-1.otf);
+}
 body {
   background-color: #efefef;
 }
@@ -197,7 +201,7 @@ body {
   display: flex;
   align-items: center;
 }
-.main .main__content .write-post-container .user-profile img, .main .main__content .post-container .user-profile img {
+.main .main__content .write-post-container .user-profile .user-profile-img, .main .main__content .post-container .user-profile .user-profile-img {
   width: 45px;
   border-radius: 50%;
   margin-right: 10px;
@@ -280,6 +284,17 @@ body {
 .main .main__content .write-post-container .post-input-container .add-post-links a img, .main .main__content .post-container .post-input-container .add-post-links a img {
   width: 20px;
   margin-right: 10px;
+}
+.main .main__content .load-more-btn {
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid #626262;
+  color: #626262;
+  background: transparent;
+  border-radius: 4px;
+  margin-top: 15px;
 }
 .main .main__right-sidebar {
   flex-basis: 25%;
@@ -379,4 +394,71 @@ body {
 .main .main__right-sidebar .main__right-sidebar-online-list .online::after {
   top: unset;
   bottom: 0;
+}
+
+.footer {
+  text-align: center;
+  color: #626262;
+  padding: 10px 0 15px;
+}
+.footer a {
+  font-family: Pufony;
+  text-decoration: none;
+  color: #333333;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.settings-menu {
+  position: absolute;
+  width: 90%;
+  max-width: 350px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  overflow: hidden;
+  top: 108%;
+  right: 5%;
+}
+.settings-menu hr {
+  border: 0;
+  height: 1px;
+  background-color: #626262;
+  margin: 10px 0;
+}
+.settings-menu .settings-menu-inner {
+  padding: 20px;
+}
+.settings-menu .settings-menu-inner .user-profile {
+  display: flex;
+  align-items: center;
+}
+.settings-menu .settings-menu-inner .user-profile .user-profile-img {
+  width: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.settings-menu .settings-menu-inner .user-profile a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #9B2D30;
+}
+.settings-menu .settings-menu-inner .settings-links {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+.settings-menu .settings-menu-inner .settings-links .settings-icon {
+  width: 38px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.settings-menu .settings-menu-inner .settings-links a {
+  display: flex;
+  flex: 1;
+  text-decoration: none;
+  align-items: center;
+  justify-content: space-between;
+  color: #626262;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
