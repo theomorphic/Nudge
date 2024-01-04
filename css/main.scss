@@ -592,6 +592,37 @@ body{
 	top: 108%;
 	right: 5%;
 
+
+	max-height: 0; //вместо hidden, чтобы они не мешали на сайте
+	transition: max-height 0.3s;
+
+	#dark-btn{
+		position: absolute;
+		top: 12px;
+		right: 20px;
+		background-color: #ccc;
+		width: 45px;
+		border-radius: 15px;
+		padding: 2px 3px;
+		cursor: pointer;
+		display: flex;
+		transition: padding-left 0.5s, background-color 0.5s;
+
+
+		span{
+			width: 18px;
+			height: 18px;
+			background-color: #fff;
+			border-radius: 50%;
+			display: inline-block;
+		}
+	}
+
+	#dark-btn.dark-btn-on{
+		padding-left: 23px;
+		background-color: #000;
+	}
+
 	hr{
 		border: 0;
 		height: 1px;
@@ -651,6 +682,10 @@ body{
 
 
 	}
+}
+
+.settings-menu-height{
+	max-height: 450px;
 }
 
 

@@ -39,7 +39,7 @@
 				<input type="text" placeholder="Search" class="nav__search-input">
 			</div>
 
-			<div class="nav__user-icon online"> 
+			<div class="nav__user-icon online" onclick="settingsMenuToggle()"> 
 
 				<img src="./img/profile-pic.png" alt="profile" class="nav__user-img">
 			</div>
@@ -49,6 +49,11 @@
 	<!-------------------- settings-menu ------------->
 
 		<div class="settings-menu">
+
+			<div id="dark-btn">
+				<span></span>
+			</div>
+
 
 			<div class="settings-menu-inner">
 				
@@ -620,5 +625,8 @@
 		<p>Copyright - 2023 <a href="https://github.com/theomorphic" target="_blank">theomorphic</a></p>
 
 	</footer>
+
+
+	<script src="./script.js"></script>
 </body>
 </html>

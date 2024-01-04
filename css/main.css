@@ -419,6 +419,31 @@ body {
   overflow: hidden;
   top: 108%;
   right: 5%;
+  max-height: 0;
+  transition: max-height 0.3s;
+}
+.settings-menu #dark-btn {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  background-color: #ccc;
+  width: 45px;
+  border-radius: 15px;
+  padding: 2px 3px;
+  cursor: pointer;
+  display: flex;
+  transition: padding-left 0.5s, background-color 0.5s;
+}
+.settings-menu #dark-btn span {
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+}
+.settings-menu #dark-btn.dark-btn-on {
+  padding-left: 23px;
+  background-color: #000;
 }
 .settings-menu hr {
   border: 0;
@@ -461,4 +486,8 @@ body {
   justify-content: space-between;
   color: #626262;
   cursor: pointer;
+}
+
+.settings-menu-height {
+  max-height: 450px;
 }/*# sourceMappingURL=main.css.map */
