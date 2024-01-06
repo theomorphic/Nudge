@@ -9,15 +9,28 @@
   font-family: Pufony;
   src: url(../files/Pufony-1.otf);
 }
+:root {
+  --body-color: #efefef;
+  --nav-color: #9B2D30;
+  --bg-color: #fff;
+}
+
+.dark-theme {
+  --body-color: #0a0a0a;
+  --nav-color: #000;
+  --bg-color: #000;
+}
+
 body {
-  background-color: #efefef;
+  background-color: var(--body-color);
+  transition: background 0.3s;
 }
 
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #9B2D30;
+  background-color: var(--nav-color);
   padding: 5px 5%;
   position: sticky;
   top: 0;
@@ -191,7 +204,7 @@ body {
 }
 .main .main__content .write-post-container, .main .main__content .post-container {
   width: 100%;
-  background-color: #fff;
+  background-color: var(--bg-color);
   border-radius: 6px;
   padding: 20px;
   -moz-columns: #626262;
@@ -216,6 +229,7 @@ body {
   flex-direction: row;
   align-items: center;
   font-size: 12px;
+  color: #626262;
 }
 .main .main__content .write-post-container .user-profile small svg, .main .main__content .post-container .user-profile small svg {
   margin-left: 3%;
@@ -238,6 +252,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: #626262;
 }
 .main .main__content .write-post-container .post-row .activity-icons div, .main .main__content .post-container .post-row .activity-icons div {
   display: inline-flex;
@@ -301,7 +316,7 @@ body {
   position: sticky;
   top: 70px;
   align-self: flex-start;
-  background-color: #fff;
+  background-color: var(--bg-color);
   padding: 20px;
   border-radius: 4px;
   color: #626262;
@@ -413,12 +428,13 @@ body {
   position: absolute;
   width: 90%;
   max-width: 350px;
-  background-color: #fff;
+  background-color: var(--bg-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   border-radius: 4px;
   overflow: hidden;
   top: 108%;
   right: 5%;
+  color: #626262;
   max-height: 0;
   transition: max-height 0.3s;
 }
@@ -443,7 +459,7 @@ body {
 }
 .settings-menu #dark-btn.dark-btn-on {
   padding-left: 23px;
-  background-color: #000;
+  background-color: #0a0a0a;
 }
 .settings-menu hr {
   border: 0;
